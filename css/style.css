@@ -1,0 +1,1313 @@
+/*
+1.common css
+2.variables
+3.mixing css
+4.heading css
+5.nav-bar css
+6.banner css
+7.about me css
+8.my skills css
+9.services css
+10.clients css
+11.portfolio css
+
+*/
+/*==  table of css ==*/
+/*common css start*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+i {
+    padding: 0;
+    margin: 0;
+}
+
+/*common css end*/
+/*variable css start*/
+/*variable css end*/
+/*mixing css start*/
+/*mixing css end*/
+/*heading css start*/
+.heading {
+    padding-bottom: 60px;
+}
+
+.heading h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+.heading h2 span {
+    color: #e65f78;
+}
+
+/*heading css end*/
+
+
+/*preloder section start*/
+
+.preloder {
+
+    width: 100%;
+    height: 100vh;
+    background: #a2a2a2;
+    position: relative;
+    z-index: 9999999999999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloder .loder span {
+
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: black;
+    margin-left: 10px;
+    animation: loading linear 2s infinite;
+}
+
+.preloder .loder span:nth-child(1) {
+
+    background: #025955;
+    animation-delay: -3s;
+}
+
+
+.preloder .loder span:nth-child(2) {
+
+    background: #7eca9c;
+    animation-delay: -2.7s;
+}
+
+
+.preloder .loder span:nth-child(3) {
+
+    background: #f39189;
+    animation-delay: -2.4s;
+}
+
+
+.preloder .loder span:nth-child(4) {
+
+    background: #f25287;
+    animation-delay: -2.1s;
+}
+
+
+.preloder .loder span:nth-child(5) {
+
+    background: #28527a;
+    animation-delay: -1.8s;
+}
+
+
+@keyframes loading {
+
+    50%,
+    70% {
+
+        transform: scale(2);
+    }
+
+    71%,
+    100% {
+
+        opacity: .2;
+    }
+}
+
+/*preloder section end*/
+
+/*nav section start*/
+.navbar {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+}
+
+.navbar .navbar-brand {
+    padding: 20px 0px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: white;
+    padding: 10px 20px;
+    margin: 0px 3px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #e65f78;
+}
+
+.navbar .navbar-nav .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 5px;
+    z-index: -1;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover::after {
+    left: 0%;
+}
+
+.navbar .navbar-nav .nav-item .active {
+    color: #e65f78;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar .navbar-nav .nav-item .active::after {
+    caption-side: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 5px;
+}
+
+.active-nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.69);
+    z-index: 9999999999999999;
+    animation: smoth linear 1s;
+}
+
+@keyframes smoth {
+    0% {
+        top: -70px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+/*nav section end*/
+/*banner section start*/
+#banner {
+    background: url(../image/banner.jpg) no-repeat center / cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+#banner::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+#banner .banner-text {
+    color: white;
+    margin-top: 40%;
+}
+
+#banner .banner-text h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+
+#banner .banner-text h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+#banner .banner-text h1 .first {
+    text-transform: uppercase;
+}
+
+#banner .banner-text h1 .typed {
+    letter-spacing: 2px;
+}
+
+#banner .banner-text p {
+    padding: 30px 80px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#banner .banner-text .banner-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: white;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+#banner .banner-text .banner-btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: -100%;
+    border-radius: 50px;
+    z-index: -1;
+    background: white;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+#banner .banner-text .banner-btn:hover {
+    color: black;
+}
+
+#banner .banner-text .banner-btn:hover::after {
+    left: 0%;
+}
+
+#banner .banner-text .scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: -130px;
+    transform: translateX(-50%);
+}
+
+#banner .banner-text .scroll-down h5 {
+    width: 28px;
+    height: 44px;
+    border: 1px solid white;
+    border-radius: 30px;
+    position: relative;
+    line-height: 54px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#banner .banner-text .scroll-down h5::after {
+    content: '';
+    width: 3px;
+    height: 12px;
+    border-radius: 5px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*banner section end*/
+/*about section start*/
+#about {
+    padding: 100px 0px 80px;
+}
+
+#about .about-img img {
+    border-radius: 5px;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+#about .about-img img:hover {
+    margin: -3px 0px 0px 3px;
+}
+
+#about .about-text {
+    padding-top: 35px;
+}
+
+#about .about-text h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+#about .about-text h2 span {
+    color: #e65f78;
+}
+
+#about .about-text p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #8b8989;
+    line-height: 26px;
+    letter-spacing: .4px;
+    padding-bottom: 40px;
+}
+
+#about .about-text .about-quali {
+    display: flex;
+    justify-content: space-between;
+}
+
+#about .about-text .about-quali ul li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #4a4848;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+#about .about-text .about-quali ul li i {
+    font-size: 16px;
+    margin-right: 3px;
+}
+
+#about .about-text a {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 1px solid black;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: black;
+    margin-top: 20px;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+#about .about-text a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: -100%;
+    border-radius: 50px;
+    z-index: -1;
+    background: black;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+#about .about-text a:hover {
+    color: white;
+    border-color: black;
+}
+
+#about .about-text a:hover::after {
+    left: 0%;
+}
+
+/*about section end*/
+/*skill section start*/
+#skill {
+    padding: 50px 0px 100px;
+}
+
+#skill .skill-content .personal-skill {
+    padding: 40px 30px 30px;
+    background: #f9f9f9;
+}
+
+#skill .skill-content .personal-skill h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    text-transform: capitalize;
+    color: #5c5c5c;
+    padding-bottom: 30px;
+}
+
+#skill .skill-content .personal-skill ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#skill .skill-content .personal-skill ul li h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #151515;
+}
+
+#skill .skill-content .personal-skill ul li h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: gray;
+    padding-right: 10px;
+}
+
+#skill .skill-content .personal-skill ul li:nth-child(2) {
+    width: 100%;
+    height: 8px;
+    background: gray;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#skill .skill-content .personal-skill ul li:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #e65f78;
+    border-radius: 5px;
+    animation: progress1 linear 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+#skill .skill-content .personal-skill ul li:nth-child(4) {
+    width: 100%;
+    height: 8px;
+    background: gray;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#skill .skill-content .personal-skill ul li:nth-child(4)::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #e65f78;
+    border-radius: 5px;
+    animation: progress2 linear 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+#skill .skill-content .personal-skill ul li:nth-child(6) {
+    width: 100%;
+    height: 8px;
+    background: gray;
+    border-radius: 5px;
+    position: relative;
+}
+
+#skill .skill-content .personal-skill ul li:nth-child(6)::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #e65f78;
+    border-radius: 5px;
+    animation: progress3 linear 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+#skill .skill-content .professional-skill {
+    padding: 40px 30px 30px;
+    background: #f9f9f9;
+}
+
+#skill .skill-content .professional-skill h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    text-transform: capitalize;
+    color: #5c5c5c;
+    padding-bottom: 30px;
+}
+
+#skill .skill-content .professional-skill ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#skill .skill-content .professional-skill ul li h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #151515;
+}
+
+#skill .skill-content .professional-skill ul li h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: gray;
+    padding-right: 10px;
+}
+
+#skill .skill-content .professional-skill ul li:nth-child(2) {
+    width: 100%;
+    height: 8px;
+    background: gray;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#skill .skill-content .professional-skill ul li:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #e65f78;
+    border-radius: 5px;
+    animation: progress4 linear 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+#skill .skill-content .professional-skill ul li:nth-child(4) {
+    width: 100%;
+    height: 8px;
+    background: gray;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#skill .skill-content .professional-skill ul li:nth-child(4)::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #e65f78;
+    border-radius: 5px;
+    animation: progress5 linear 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+#skill .skill-content .professional-skill ul li:nth-child(6) {
+    width: 100%;
+    height: 8px;
+    background: gray;
+    border-radius: 5px;
+    position: relative;
+}
+
+#skill .skill-content .professional-skill ul li:nth-child(6)::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #e65f78;
+    border-radius: 5px;
+    animation: progress6 linear 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes progress1 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes progress2 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+@keyframes progress3 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes progress4 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes progress5 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes progress6 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+/*skill section end*/
+/* service section start*/
+#service {
+    background: #f9f9f9;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+#service .service-content .service-item {
+    border: 1px solid #cbbcbc;
+    padding: 25px 20px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+}
+
+#service .service-content .service-item:hover {
+    transform: translateY(-10px);
+}
+
+#service .service-content .service-item i {
+    color: #e65f78;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+#service .service-content .service-item h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: black;
+    text-transform: capitalize;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+#service .service-content .service-item h3::after {
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    background: #e65f78;
+    z-index: -1;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+#service .service-content .service-item:hover h3::after {
+    width: 70px;
+}
+
+#service .service-content .service-item p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: .4px;
+    color: #716969;
+    padding-bottom: 20px;
+}
+
+/* service section end*/
+/*clints section start*/
+#clints {
+    background: white;
+    padding: 100px 0px;
+    position: relative;
+}
+
+#clints .clints-content .clints-slider .clints-item {
+    background: #e6e6e6;
+    padding: 30px 20px;
+    margin: 20px;
+}
+
+#clints .clints-content .clints-slider .clints-item .clints-detalis {
+    padding-top: 15px;
+}
+
+#clints .clints-content .clints-slider .clints-item .clints-detalis h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: black;
+}
+
+#clints .clints-content .clints-slider .clints-item .clints-detalis p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #2e2626;
+    text-transform: capitalize;
+}
+
+#clints .clints-content .clints-slider .clints-item .clints-text p {
+    padding-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+}
+
+#clints .clints-content .clints-slider .slick-center {
+    transform: scaleY(1.1);
+}
+
+#clints .slick-dots {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#clints .slick-dots li button {
+    font-size: 0px;
+    border: none;
+    background: none;
+}
+
+#clints .slick-dots li {
+    width: 12px;
+    height: 4px;
+    background: #eaa4b0;
+    float: left;
+    margin-right: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#clints .slick-dots .slick-active {
+    width: 20px;
+    background: #e65f78;
+}
+
+/*clints section end*/
+/*portfolio section start*/
+#portfolio {
+    background: #f8f9fa;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+#portfolio .portfolio-content .portfolio-item {
+    height: 350px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio .portfolio-content .portfolio-item img {
+    height: 100%;
+}
+
+#portfolio .portfolio-content .portfolio-item .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: -100%;
+    background: rgba(230, 95, 120, 0.8);
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+#portfolio .portfolio-content .portfolio-item .overlay .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+#portfolio .portfolio-content .portfolio-item .overlay .text i {
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+}
+
+#portfolio .portfolio-content .portfolio-item .overlay .text p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    text-transform: capitalize;
+    padding-top: 5px;
+}
+
+#portfolio .portfolio-content .portfolio-item:hover .overlay {
+    left: 0%;
+    transform: scale(0.9);
+}
+
+/*portfolio section end*/
+/*hire section start*/
+#hire {
+    padding: 80px 0px;
+    background: white;
+}
+
+#hire .hire-heading h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: black;
+}
+
+#hire .hire-contact {
+    text-align: right;
+}
+
+#hire .hire-contact a {
+    display: inline-block;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: capitalize;
+    border-bottom: 1px solid gray;
+    position: relative;
+    z-index: 1;
+}
+
+#hire .hire-contact a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: 0px;
+    left: 0px;
+    background: black;
+    z-index: -1;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+#hire .hire-contact a:hover::after {
+    width: 100%;
+}
+
+/*hire section end*/
+/*blog section start*/
+#blog {
+    padding: 100px 0px;
+    background: #f9f9f9;
+}
+
+#blog .blog-content .blog-item {
+    background: white;
+    border-radius: 3px;
+}
+
+#blog .blog-content .blog-item .blog-img {
+    overflow: hidden;
+}
+
+#blog .blog-content .blog-item .blog-img img {
+    transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+
+#blog .blog-content .blog-item:hover .blog-img img {
+    transform: scale(1.1);
+}
+
+#blog .blog-content .blog-item .blog-text {
+    padding: 10px;
+}
+
+#blog .blog-content .blog-item .blog-text h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: black;
+}
+
+#blog .blog-content .blog-item .blog-text h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #7b7b7b;
+    text-transform: capitalize;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#blog .blog-content .blog-item .blog-text h4 span {
+    color: #e65f78;
+}
+
+#blog .blog-content .blog-item .blog-text p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #777777;
+}
+
+#blog .blog-content .blog-item .blog-text a {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #585858;
+    text-transform: capitalize;
+    padding-top: 15px;
+}
+
+/*blog section end*/
+/*contact section start*/
+#contact {
+    padding: 100px 0px;
+}
+
+#contact .contact-content .contact-deatils .contact-text p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #353535;
+    padding-bottom: 30px;
+}
+
+#contact .contact-content .contact-deatils ul li {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+#contact .contact-content .contact-deatils ul li i {
+    font-size: 14px;
+    color: gray;
+    padding-top: 5px;
+    cursor: pointer;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+#contact .contact-content .contact-deatils ul li h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    text-transform: capitalize;
+    padding-left: 20px;
+    width: 170px;
+}
+
+#contact .contact-content .contact-deatils ul li p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: gray;
+    position: relative;
+    z-index: 1;
+}
+
+#contact .contact-content .contact-deatils ul li p::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    left: 0px;
+    bottom: -3px;
+    background: black;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+#contact .contact-content .contact-deatils ul li p:hover::after {
+    width: 100%;
+}
+
+#contact .contact-content .contact-deatils ul li p a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: gray;
+}
+
+#contact .contact-content .contact-deatils ul li:hover i {
+    color: #e65f78;
+}
+
+#contact .contact-content .contact-form form .form-group input {
+    border: 1px solid gray;
+    outline: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: gray;
+}
+
+#contact .contact-content .contact-form form .form-group small {
+    padding-left: 10px;
+    color: red;
+    text-transform: capitalize;
+}
+
+#contact .contact-content .contact-form form .form-group textarea {
+    border: 1px solid gray;
+    outline: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: gray;
+    text-transform: capitalize;
+}
+
+#contact .contact-content .contact-form form button {
+    width: 100%;
+    outline: none;
+    border: 1px solid #e65f78;
+    padding: 12px 0px 12px 15px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    color: white;
+    background: #e65f78;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/*contact section end*/
+/*footer section start*/
+footer {
+    background: #242424;
+    padding: 100px 0px;
+}
+
+footer .footer-social ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-social ul li {
+    margin: 0px 10px;
+}
+
+footer .footer-social ul li a i {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(241, 241, 241, 0.08);
+    line-height: 45px;
+    color: #6c757d;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    position: relative;
+    z-index: 1;
+}
+
+footer .footer-social ul li a i::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #e65f78;
+    z-index: -1;
+    transform: scale(0);
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+footer .footer-social ul li a i:hover {
+    color: white;
+}
+
+footer .footer-social ul li a i:hover::after {
+    transform: scale(1);
+}
+
+footer .footer-social p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6c757d;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+footer .footer-social p:hover {
+    color: white;
+}
+
+/*footer section end*/
+/*scroll-btn start*/
+.scroll-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 42px;
+    height: 42px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 42px;
+    background: #e65f78;
+    cursor: pointer;
+    z-index: 99999999;
+    display: none;
+}
+
+.scroll-btn i {
+    color: white;
+    font-size: 22px;
+}
+
+/*scroll-btn end*/

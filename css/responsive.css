@@ -1,0 +1,421 @@
+/*extra small device start*/
+
+@media (max-width:575.98px) {
+
+    .navbar-toggler {
+
+        border-color: white !important;
+        margin-right: 10px;
+    }
+
+    .navbar-toggler span {
+
+        color: white;
+        font-size: 24px;
+
+
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link {
+
+        text-align: center;
+    }
+
+    .navbar .navbar-brand {
+
+        padding-left: 10px;
+    }
+
+    #banner .banner-text h1 {
+
+        font-size: 38px;
+    }
+
+    #banner .banner-text p {
+
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    #banner .banner-text {
+
+        margin-top: 50%;
+    }
+
+
+    #about {
+
+        padding-bottom: 50px;
+    }
+
+    #about .about-text p {
+
+        font-size: 14px;
+    }
+
+    #about .about-text .about-quali ul li {
+
+        font-size: 16px;
+    }
+
+    #skill .skill-content .professional-skill {
+
+        margin-top: 40px;
+    }
+
+    #skill {
+        padding: 50px 0px 60px;
+    }
+
+    #service {
+
+        padding-top: 70px;
+        padding-bottom: 40px;
+    }
+
+    #service .service-content .service-item {
+
+        padding: 15px 20px;
+    }
+
+
+    #service .service-content .service-item p {
+
+        font-size: 13px;
+    }
+
+    #clints {
+
+        padding: 70px 0px;
+    }
+
+    #portfolio {
+
+        padding-top: 70px;
+        padding-bottom: 40px;
+    }
+
+    #hire {
+
+        padding: 60px 0px;
+    }
+
+    #hire .hire-heading h2 {
+
+        font-size: 17px;
+    }
+
+    #blog {
+
+        padding-top: 70px;
+        padding-bottom: 40px;
+
+    }
+
+    #blog .blog-content .blog-item {
+
+        margin-bottom: 30px;
+
+    }
+
+    #contact {
+
+        padding: 60px 0px;
+    }
+
+    #contact .contact-content .contact-deatils {
+
+        margin-bottom: 40px;
+    }
+
+
+
+}
+
+/*extra small device end*/
+
+
+/*small device start*/
+
+@media (min-width:576px)and (max-width:767.98px) {
+
+    .navbar-toggler {
+
+        border-color: white !important;
+    }
+
+    .navbar-toggler span {
+
+        color: white;
+        font-size: 24px;
+
+
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link {
+
+        text-align: center;
+    }
+
+    #banner .banner-text h1 {
+
+        font-size: 38px;
+    }
+
+    #banner .banner-text p {
+
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    #banner .banner-text {
+
+        margin-top: 50%;
+    }
+
+
+    #about {
+
+        padding-bottom: 50px;
+    }
+
+    #skill .skill-content .professional-skill {
+
+        margin-top: 40px;
+    }
+
+    #skill {
+        padding: 50px 0px 60px;
+    }
+
+    #service {
+
+        padding-top: 70px;
+        padding-bottom: 40px;
+    }
+
+    #service .service-content .service-item {
+
+        padding: 15px 20px;
+    }
+
+
+    #service .service-content .service-item p {
+
+        font-size: 13px;
+    }
+
+    #clints {
+
+        padding: 70px 0px;
+    }
+
+    #portfolio {
+
+        padding-top: 70px;
+        padding-bottom: 40px;
+    }
+
+    #hire {
+
+        padding: 60px 0px;
+    }
+
+    #hire .hire-heading h2 {
+
+        font-size: 22px;
+    }
+
+    #blog {
+
+        padding-top: 70px;
+        padding-bottom: 40px;
+
+    }
+
+    #blog .blog-content .blog-item {
+
+        margin-bottom: 30px;
+
+    }
+
+    #contact {
+
+        padding: 60px 0px;
+    }
+
+    #contact .contact-content .contact-deatils {
+
+        margin-bottom: 40px;
+    }
+
+
+}
+
+/*small device end*/
+
+/*medium device start*/
+
+
+@media (min-width:768px) and (max-width:991.98px) {
+
+    .navbar-toggler {
+
+        border-color: white !important;
+    }
+
+    .navbar-toggler span {
+
+        color: white;
+        font-size: 24px;
+
+
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link {
+
+        text-align: center;
+    }
+
+    #banner .banner-text {
+
+        margin-top: 40%;
+    }
+
+
+    #about {
+
+        padding-bottom: 50px;
+    }
+
+    #skill {
+        padding: 50px 0px 60px;
+    }
+
+
+
+    #service {
+
+        padding-top: 70px;
+        padding-bottom: 40px;
+    }
+
+    #service .service-content .service-item {
+
+        padding: 15px 20px;
+    }
+
+
+    #service .service-content .service-item p {
+
+        font-size: 13px;
+    }
+
+    #clints {
+
+        padding: 70px 0px;
+    }
+
+    #portfolio {
+
+        padding-top: 70px;
+        padding-bottom: 40px;
+    }
+
+    #hire {
+
+        padding: 60px 0px;
+    }
+
+    #hire .hire-heading h2 {
+
+        font-size: 30px;
+    }
+
+    #blog {
+
+        padding-top: 70px;
+        padding-bottom: 40px;
+
+    }
+
+    #blog .blog-content .blog-item {
+
+        margin-bottom: 30px;
+
+    }
+
+    #contact {
+
+        padding: 60px 0px;
+    }
+
+    #contact .contact-content .contact-deatils {
+
+        margin-bottom: 40px;
+    }
+
+}
+
+
+/*medium device end*/
+
+
+/*large device start*/
+
+@media (min-width:992px) and (max-width:1199.98px) {
+
+    #banner .banner-text h1 {
+
+        font-size: 42px;
+    }
+
+    #about .about-text {
+
+        padding: 0px;
+    }
+
+    #about .about-text p {
+
+        font-size: 14px;
+        padding-bottom: 20px;
+
+    }
+
+    #about .about-text .about-quali ul li {
+
+        font-size: 16px;
+    }
+
+    #about .about-text a {
+
+        margin-top: 5px;
+    }
+
+    #clints .clints-content .clints-slider .clints-item .clints-text p {
+
+        font-size: 14px;
+    }
+
+    #hire .hire-heading h2 {
+
+        font-size: 30px;
+    }
+
+}
+
+
+/*large device end*/
+
+
+/*extra large device start*/
+
+
+@media (min-width:1200px){
+    
+    
+    
+}
+
+
+/*extra large device end*/
