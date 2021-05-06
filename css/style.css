@@ -343,7 +343,8 @@ i {
     left: 0%;
 }
 
-#banner .banner-text .scroll-down {
+#banner .banner-text .scroll-down{
+
     position: absolute;
     left: 50%;
     bottom: -130px;
